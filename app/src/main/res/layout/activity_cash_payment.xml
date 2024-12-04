@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashPayment">
+
+    <!-- Display for Amount to Pay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvAmountToPayLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount to Pay"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:id="@+id/tvAmountToPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tvAmountToPayLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp" />
+
+            <!-- Input for Cash Received -->
+            <TextView
+                android:id="@+id/tvCashReceivedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash Received"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/tvAmountToPay"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="32dp" />
+
+            <EditText
+                android:id="@+id/etCashReceived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:hint="0.00"
+                app:layout_constraintTop_toBottomOf="@id/tvCashReceivedLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="8dp" />
+
+
+
+            <!-- Continue Button -->
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<!-- res/layout/layout_success_dialog.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="317dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#B3241D75"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/check_icon"/>
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Success!"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount change"
+        android:textSize="13dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/tvChangeAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PHP 1000"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="@drawable/button_success"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

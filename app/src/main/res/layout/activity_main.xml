@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_radius"
+        android:gravity="center"
+        android:padding="25dp"
+        android:elevation="15dp"
+        android:id="@+id/linearHomeHeader">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT ACCESS TYPE"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20dp"
+            android:textColor="#BBBBBB"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select  Parking Access Type to\ncontinue payment"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:textColor="#BBBBBB"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/linearHomeHeader"
+        android:gravity="center">
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="256dp"
+            android:layout_height="138dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="15dp"
+            android:id="@+id/cardButtonPlateNumber"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/opacity_background"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAY WITH PLATE NUMBER"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16dp"
+                    android:textColor="#FFFFFF"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="256dp"
+            android:layout_height="138dp"
+            app:cardCornerRadius="15dp"
+            android:id="@+id/cardButtonQrcode"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/opacity_background"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAY WITH QR CODE"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16dp"
+                    android:textColor="#FFFFFF"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>
